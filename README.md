@@ -10,10 +10,11 @@ To add kotlin extensions to your project (Using Android Studio and Gradle):
 
  ```
  repository {
- maven { url = uri("https://jitpack.io") } or maven { url 'https://jitpack.io' }
+   maven { url = uri("https://jitpack.io") } or maven { url 'https://jitpack.io' }
  }
+
  dependence {
- deploy 'com.github.comando95:kotlin-extensions:1.0.0'
+   implementation 'com.github.comando95:kotlin-extensions:1.0.0'
  }
  ```
 
@@ -34,12 +35,13 @@ Example of hiding and showing views:
  ```
  view.showSoftKeyboard()
  view.hideKeyboard()
-
  ```
+
  instead you have to call:
  ```
  showSoftInput or hideSoftInputFromWindow
  ```
+
  Example to get screen/app ratio:
  ```
  //At activity
